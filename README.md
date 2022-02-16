@@ -1,2 +1,3 @@
-# qaacademy_exercicios_testes_unitarios
-Unit tests in the exercises of Qa Academy
+#  qaacademy_exercicios_junit
+
+Add instructions for project developers here.
