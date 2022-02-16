@@ -15,8 +15,8 @@ public class Execucao {
         selecionaExercicio = Integer.parseInt(selecionaExercicioStg);
 
         if (selecionaExercicio == 2) { // metodo exercicio 02
-            Exercicio_02_easy objexercicio_02 = new Exercicio_02_easy();
-            System.out.println(objexercicio_02.exibirPalavraDigitada());
+            Exercicio_02_easy objexercicio02 = new Exercicio_02_easy();
+            System.out.println(objexercicio02.exibirPalavraDigitada());
         }
         if (selecionaExercicio == 3) { // metodo exercicio 03
             String nomeUm = JOptionPane.showInputDialog("Digite o primeiro nome: ");
