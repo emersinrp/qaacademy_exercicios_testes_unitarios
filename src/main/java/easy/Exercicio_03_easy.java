@@ -9,16 +9,3 @@ public class Exercicio_03_easy {
         return ("Segundo nome digitado: " + nomeUm + "\n" + "Primeiro nome digitado: " + nomeDois);
     }
 }
-
-//  CODIGO ANTES DA REFATORAÇÃO:
-  
-    // public static void main(String[] args) {
-    // String nomeUm, nomeDois;
-
-    // nomeUm = JOptionPane.showInputDialog("Digite o primeiro nome: ");
-    // nomeDois = JOptionPane.showInputDialog("Digte o seuundo nome: ");
-
-    // System.out.println("Primeiro nome digitado: " + nomeDois);
-    // System.out.println("Segundo nome digitado: " + nomeUm);
-
-    // }
