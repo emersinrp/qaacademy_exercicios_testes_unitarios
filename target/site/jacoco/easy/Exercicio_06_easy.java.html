@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Exercicio_06_easy.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">qaacademy_exercicios_junit</a> &gt; <a href="index.source.html" class="el_package">easy</a> &gt; <span class="el_source">Exercicio_06_easy.java</span></div><h1>Exercicio_06_easy.java</h1><pre class="source lang-java linenums">package easy;
+
+// Exercício 6 -  Faça um algoritmo para ler duas notas, calcular a média.
+// E SE - a média &gt; 5 Exibir aprovado,  SE a média &lt; 5 exibir reprovado, se media = 5 exibir exame. 
+
+<span class="nc" id="L6">public class Exercicio_06_easy {</span>
+    
+        public String calculaRecebeNotaCalculaMedia(double nota1, double nota2) {
+            double resultado;
+<span class="nc" id="L10">            resultado = (nota1 + nota2) / 2;</span>
+
+<span class="nc bnc" id="L12" title="All 2 branches missed.">            if (resultado &gt; 5) {</span>
+<span class="nc" id="L13">                return (&quot;Aprovado: &quot; + resultado);</span>
+            }
+<span class="nc bnc" id="L15" title="All 2 branches missed.">            if (resultado &lt; 5) {</span>
+<span class="nc" id="L16">                return (&quot;Reprovado: &quot; + resultado);</span>
+            }
+<span class="nc bnc" id="L18" title="All 2 branches missed.">            if (resultado == 5) {</span>
+<span class="nc" id="L19">                return (&quot;Exame: &quot; + resultado);</span>
+            }
+<span class="nc" id="L21">            return null;            </span>
+        }
+}
+
+//         CODIGO ANTES DA REFATORAÇÃO:
+
+//         public static void main(String[] args) {
+
+//         double nota1, nota2,resultado; //variavel do tipo numerico real, cujo resultado é decimal
+//         String primeiraNota = JOptionPane.showInputDialog(&quot;Digite a primeira nota: &quot;);
+//         String segundaNota = JOptionPane.showInputDialog(&quot;Digite a segunda nota: &quot;);
+
+//         nota1 = Double.parseDouble(primeiraNota);
+//         nota2 = Double.parseDouble(segundaNota);
+
+//         resultado = (nota1 + nota2) / 2;
+        
+//         if (resultado &gt; 5) { // inicio SE
+//             System.out.println(&quot;Aprovado&quot;);            
+//         } // fim SE
+
+//         if (resultado &lt; 5 ) {
+//             System.out.println(&quot;Reprovado&quot;);            
+//         }
+        
+//         if (resultado == 5) {
+//             System.out.println(&quot;Exame&quot;);            
+//         }
+        
+//     }
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

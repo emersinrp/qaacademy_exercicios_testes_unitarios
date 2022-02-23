@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Exercicio_08_medio.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">qaacademy_exercicios_junit</a> &gt; <a href="index.source.html" class="el_package">medium</a> &gt; <span class="el_source">Exercicio_08_medio.java</span></div><h1>Exercicio_08_medio.java</h1><pre class="source lang-java linenums">package medium;
+
+<span class="nc" id="L3">public class Exercicio_08_medio {</span>
+    
+    public String[] criaVetorMeses() {
+        
+        String[] vetorMeses;
+<span class="nc" id="L8">        vetorMeses = new String[12];</span>
+
+<span class="nc" id="L10">        vetorMeses[0] = &quot;Janeiro&quot;;</span>
+<span class="nc" id="L11">        vetorMeses[1] = &quot;Fevereiro&quot;;</span>
+<span class="nc" id="L12">        vetorMeses[2] = &quot;Março&quot;;</span>
+<span class="nc" id="L13">        vetorMeses[3] = &quot;Abril&quot;;</span>
+<span class="nc" id="L14">        vetorMeses[4] = &quot;Maio&quot;;</span>
+<span class="nc" id="L15">        vetorMeses[5] = &quot;Junho&quot;;</span>
+<span class="nc" id="L16">        vetorMeses[6] = &quot;Julho&quot;;</span>
+<span class="nc" id="L17">        vetorMeses[7] = &quot;Agosto&quot;;</span>
+<span class="nc" id="L18">        vetorMeses[8] = &quot;Setembro&quot;;</span>
+<span class="nc" id="L19">        vetorMeses[9] = &quot;Outubro&quot;;</span>
+<span class="nc" id="L20">        vetorMeses[10] = &quot;Novembro&quot;;</span>
+<span class="nc" id="L21">        vetorMeses[11] = &quot;Dezembro&quot;;</span>
+
+<span class="nc" id="L23">        return vetorMeses;</span>
+    }
+
+    public void imprimeValoresVetor(String[] vetorMeses) {
+<span class="nc" id="L27">        int i = 0;</span>
+<span class="nc bnc" id="L28" title="All 2 branches missed.">        while (i &lt; 12) {</span>
+<span class="nc" id="L29">            System.out.println(&quot;Esse é o mes de: &quot; </span>
+            + (i+1) + &quot; - &quot;+ vetorMeses[i]);
+<span class="nc" id="L31">            i++;</span>
+        }
+<span class="nc" id="L33">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>
