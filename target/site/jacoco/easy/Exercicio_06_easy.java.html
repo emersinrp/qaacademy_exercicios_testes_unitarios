@@ -3,50 +3,22 @@
 // Exercício 6 -  Faça um algoritmo para ler duas notas, calcular a média.
 // E SE - a média &gt; 5 Exibir aprovado,  SE a média &lt; 5 exibir reprovado, se media = 5 exibir exame. 
 
-<span class="nc" id="L6">public class Exercicio_06_easy {</span>
-    
-        public String calculaRecebeNotaCalculaMedia(double nota1, double nota2) {
-            double resultado;
-<span class="nc" id="L10">            resultado = (nota1 + nota2) / 2;</span>
+<span class="fc" id="L6">public class Exercicio_06_easy {</span>
 
-<span class="nc bnc" id="L12" title="All 2 branches missed.">            if (resultado &gt; 5) {</span>
-<span class="nc" id="L13">                return (&quot;Aprovado: &quot; + resultado);</span>
-            }
-<span class="nc bnc" id="L15" title="All 2 branches missed.">            if (resultado &lt; 5) {</span>
-<span class="nc" id="L16">                return (&quot;Reprovado: &quot; + resultado);</span>
-            }
-<span class="nc bnc" id="L18" title="All 2 branches missed.">            if (resultado == 5) {</span>
-<span class="nc" id="L19">                return (&quot;Exame: &quot; + resultado);</span>
-            }
-<span class="nc" id="L21">            return null;            </span>
+    public String calculaRecebeNotaCalculaMedia(double nota1, double nota2) {
+        double resultado;
+<span class="fc" id="L10">        resultado = (nota1 + nota2) / 2;</span>
+
+<span class="fc bfc" id="L12" title="All 2 branches covered.">        if (resultado &gt; 5) {</span>
+<span class="fc" id="L13">            return (&quot;Aprovado: &quot; + resultado);</span>
         }
+<span class="fc bfc" id="L15" title="All 4 branches covered.">        if (resultado &gt;= 0 &amp;&amp; resultado &lt; 5) {</span>
+<span class="fc" id="L16">            return (&quot;Reprovado: &quot; + resultado);</span>
+        }
+<span class="fc bfc" id="L18" title="All 2 branches covered.">        if (resultado == 5) {</span>
+<span class="fc" id="L19">            return (&quot;Exame: &quot; + resultado);</span>
+        }
+<span class="fc" id="L21">        return &quot;Valor invalido&quot;;</span>
+    }
 }
-
-//         CODIGO ANTES DA REFATORAÇÃO:
-
-//         public static void main(String[] args) {
-
-//         double nota1, nota2,resultado; //variavel do tipo numerico real, cujo resultado é decimal
-//         String primeiraNota = JOptionPane.showInputDialog(&quot;Digite a primeira nota: &quot;);
-//         String segundaNota = JOptionPane.showInputDialog(&quot;Digite a segunda nota: &quot;);
-
-//         nota1 = Double.parseDouble(primeiraNota);
-//         nota2 = Double.parseDouble(segundaNota);
-
-//         resultado = (nota1 + nota2) / 2;
-        
-//         if (resultado &gt; 5) { // inicio SE
-//             System.out.println(&quot;Aprovado&quot;);            
-//         } // fim SE
-
-//         if (resultado &lt; 5 ) {
-//             System.out.println(&quot;Reprovado&quot;);            
-//         }
-        
-//         if (resultado == 5) {
-//             System.out.println(&quot;Exame&quot;);            
-//         }
-        
-//     }
-
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

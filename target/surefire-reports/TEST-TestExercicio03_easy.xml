@@ -45,7 +45,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.3/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean jacoco:prepare-agent install jacoco:report"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>

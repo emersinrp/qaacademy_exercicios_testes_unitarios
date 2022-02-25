@@ -7,57 +7,28 @@
 //  De R$ 2.089,61 até R$ 3.134,40 =12%
 //  De R$ 3.134,41 até R$ 6.101,06 = 14%
 
-<span class="nc" id="L10">public class Exercicio_07_easy {</span>
+<span class="fc" id="L10">public class Exercicio_07_easy {</span>
+<span class="fc" id="L11">    String mensagemInss = &quot;Seu valor do INSS é de: &quot;;</span>
 
-    public String calculoInss(double salarioInformado) {
-<span class="nc" id="L13">        double aliquota1 = 0.075, aliquota2 = 0.09, aliquota3 = 0.12, aliquota4 = 0.14;</span>
+    public double calculoInss(double salarioInformado) {
+<span class="fc" id="L14">        double aliquota1 = 0.075, aliquota2 = 0.09, aliquota3 = 0.12, aliquota4 = 0.14;</span>
 
-<span class="nc bnc" id="L15" title="All 2 branches missed.">        if (salarioInformado &lt;= 1045.00) {</span>
-<span class="nc" id="L16">            return (&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota1));</span>
+<span class="fc bfc" id="L16" title="All 4 branches covered.">        if (salarioInformado &gt; 0 &amp;&amp; salarioInformado &lt;= 1045.00) {</span>
+<span class="fc" id="L17">            return (salarioInformado * aliquota1);</span>
         }
-<span class="nc bnc" id="L18" title="All 4 branches missed.">        if (salarioInformado &gt;= 1045.01 &amp;&amp; salarioInformado &lt;= 2089.60) {</span>
-<span class="nc" id="L19">            return (&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota2));</span>
+<span class="fc bfc" id="L19" title="All 4 branches covered.">        if (salarioInformado &gt;= 1045.01 &amp;&amp; salarioInformado &lt;= 2089.60) {</span>
+<span class="fc" id="L20">            return (salarioInformado * aliquota2);</span>
         }
-<span class="nc bnc" id="L21" title="All 4 branches missed.">        if (salarioInformado &gt;= 2089.61 &amp;&amp; salarioInformado &lt;= 3134.40) {</span>
-<span class="nc" id="L22">            return (&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota3));</span>
+<span class="fc bfc" id="L22" title="All 4 branches covered.">        if (salarioInformado &gt;= 2089.61 &amp;&amp; salarioInformado &lt;= 3134.40) {</span>
+<span class="fc" id="L23">            return (salarioInformado * aliquota3);</span>
         }
-<span class="nc bnc" id="L24" title="All 4 branches missed.">        if (salarioInformado &gt;= 3134.41 &amp;&amp; salarioInformado &lt;= 6101.06) {</span>
-<span class="nc" id="L25">            return (&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota4));</span>
+<span class="fc bfc" id="L25" title="All 4 branches covered.">        if (salarioInformado &gt;= 3134.41 &amp;&amp; salarioInformado &lt;= 6101.06) {</span>
+<span class="fc" id="L26">            return (salarioInformado * aliquota4);</span>
         }
-<span class="nc bnc" id="L27" title="All 2 branches missed.">        if (salarioInformado &lt;= 6101.06) {</span>
-<span class="nc" id="L28">            return (&quot;Seu valor do INSS é de: 854.15&quot;);</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">        if (salarioInformado &gt; 6101.06) {</span>
+<span class="fc" id="L29">            return 854.14;</span>
         }
-<span class="nc" id="L30">        return null;</span>
+<span class="fc" id="L31">        return -1 ;</span>
     }
 }
-
-    // CODIGO ANTES DA REFATORAÇÃO: 
-
-    // public static void main(String[] args) {
-        
-        // double salarioInformado, aliquota1 = 0.075, aliquota2 = 0.09, aliquota3 = 0.12, aliquota4 = 0.14;
-        // String salarioInformadoStg = JOptionPane.showInputDialog(&quot;Digite o salário &quot;);
-
-        // salarioInformado = Double.parseDouble(salarioInformadoStg);
-
-    //     if (salarioInformado &lt;= 1045.00) {
-    //         System.out.println(&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota1));
-    //     }
-
-    //     if (salarioInformado &gt;= 1045.01 &amp;&amp; salarioInformado &lt;= 2089.60) {
-    //         System.out.println(&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota2));
-    //     }
-
-    //     if (salarioInformado &gt;= 2089.61 &amp;&amp; salarioInformado &lt;= 3134.40) {
-    //         System.out.println(&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota3));
-    //     }
-
-    //     if (salarioInformado &gt;= 3134.41 &amp;&amp; salarioInformado &lt;= 6101.06) {
-    //         System.out.println(&quot;Seu valor do INSS é de: &quot; + (salarioInformado * aliquota4));
-    //     }
-    //     if (salarioInformado &gt; 6101.06) {
-    //         System.out.println(&quot;Seu valor do INSS é de: 854.15&quot;);
-    //     }
-    
-    // }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

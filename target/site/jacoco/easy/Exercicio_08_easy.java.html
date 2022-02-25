@@ -8,71 +8,31 @@
 // de 3.751,06 até 4.664,68	22,50%	636,13
 // a partir de 4.664,68	27,50%	869,36
 
-<span class="nc" id="L11">public class Exercicio_08_easy {</span>
+<span class="fc" id="L11">public class Exercicio_08_easy {</span>
 
     public double calculaImpostoDeRenda(double salario) {
 
-<span class="nc" id="L15">        double impostoRenda = 0;</span>
+<span class="fc" id="L15">        double impostoRenda = 0;</span>
 
-<span class="nc bnc" id="L17" title="All 4 branches missed.">        if (salario &gt;= 0.00 &amp;&amp; salario &lt;= 1903.98) {</span>
-<span class="nc" id="L18">            impostoRenda = 0;</span>
+<span class="fc bfc" id="L17" title="All 4 branches covered.">        if (salario &gt;= 0.00 &amp;&amp; salario &lt;= 1903.98) {</span>
+<span class="fc" id="L18">            impostoRenda = 0;</span>
         }
-<span class="nc bnc" id="L20" title="All 4 branches missed.">        if (salario &gt;= 1903.99 &amp;&amp; salario &lt;= 2826.65) {</span>
-<span class="nc" id="L21">            impostoRenda = (salario * 0.075) - 142.80;</span>
+<span class="fc bfc" id="L20" title="All 4 branches covered.">        if (salario &gt;= 1903.99 &amp;&amp; salario &lt;= 2826.65) {</span>
+<span class="fc" id="L21">            impostoRenda = (salario * 0.075) - 142.80;</span>
         }
-<span class="nc bnc" id="L23" title="All 4 branches missed.">        if (salario &gt;= 2826.66 &amp;&amp; salario &lt;= 3751.05) {</span>
-<span class="nc" id="L24">            impostoRenda = (salario * 0.15) - 354.80;</span>
+<span class="fc bfc" id="L23" title="All 4 branches covered.">        if (salario &gt;= 2826.66 &amp;&amp; salario &lt;= 3751.05) {</span>
+<span class="fc" id="L24">            impostoRenda = (salario * 0.15) - 354.80;</span>
         }
-<span class="nc bnc" id="L26" title="All 4 branches missed.">        if (salario &gt;= 3751.06 &amp;&amp; salario &lt;= 4664.68) {</span>
-<span class="nc" id="L27">            impostoRenda = (salario * 0.225) - 636.13;</span>
+<span class="fc bfc" id="L26" title="All 4 branches covered.">        if (salario &gt;= 3751.06 &amp;&amp; salario &lt;= 4664.68) {</span>
+<span class="fc" id="L27">            impostoRenda = (salario * 0.225) - 636.13;</span>
         }
-<span class="nc bnc" id="L29" title="All 2 branches missed.">        if (salario &gt;= 4664.69) {</span>
-<span class="nc" id="L30">            impostoRenda = (salario * 0.275) - 869.36;</span>
+<span class="fc bfc" id="L29" title="All 2 branches covered.">        if (salario &gt;= 4664.69) {</span>
+<span class="fc" id="L30">            impostoRenda = (salario * 0.275) - 869.36;</span>
         }
-<span class="nc" id="L32">        return impostoRenda;        </span>
+<span class="fc" id="L32">        return impostoRenda;        </span>
     }
     public double calculaSalarioLiquido(double salario, double impostoDeRenda){
-<span class="nc" id="L35">        return salario - impostoDeRenda;</span>
+<span class="fc" id="L35">        return salario - impostoDeRenda;</span>
         }
     }
-
-    // CODIGO ANTES DA REFATORAÇÃO:
-
-    // public static void main(String[] args) {
-        
-    //     double salarioInformado, salarioLiquido = 0, impostoRenda = 0;
-    //     String salarioInformadoStg = JOptionPane.showInputDialog(&quot;Informe o salario: &quot;);
-
-    //     salarioInformado = Double.parseDouble(salarioInformadoStg);
-    //     DecimalFormat df = new DecimalFormat(&quot;#,###.00&quot;);
-
-    //     if (salarioInformado &gt;= 0.00 &amp;&amp; salarioInformado &lt;= 1903.98) {
-    //         impostoRenda = 0;
-    //         salarioLiquido = salarioInformado - impostoRenda;            
-    //     }
-       
-    //     if (salarioInformado &gt;= 1903.99 &amp;&amp; salarioInformado &lt;= 2826.65) {
-    //         impostoRenda = (salarioInformado * 0.075) - 142.80;
-    //         salarioLiquido = salarioInformado - impostoRenda;          
-    //     }
-       
-    //     if (salarioInformado &gt;= 2826.66 &amp;&amp; salarioInformado &lt;= 3751.05) {
-    //         impostoRenda = (salarioInformado * 0.15) - 354.80;
-    //         salarioLiquido = salarioInformado - impostoRenda;           
-    //     }
-       
-    //     if (salarioInformado &gt;= 3751.06 &amp;&amp; salarioInformado &lt;= 4664.68) {
-    //         impostoRenda = (salarioInformado * 0.225) - 636.13;
-    //         salarioLiquido = salarioInformado - impostoRenda;             
-    //     }
-
-    //     if (salarioInformado &gt;= 4664.69) {
-    //         impostoRenda = (salarioInformado * 0.275) - 869.36;
-    //         salarioLiquido = salarioInformado - impostoRenda;    
-    //     }
-
-    //     System.out.println(&quot;Seu salario BRUTO e de: R$ &quot; + df.format(salarioInformado));
-    //     System.out.println(&quot;Seu salario LIQUIDO e de: R$ &quot; + df.format(salarioLiquido));
-    //     System.out.println(&quot;Seu IMPOSTO é de: R$ &quot; + df.format(impostoRenda));
-    // }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

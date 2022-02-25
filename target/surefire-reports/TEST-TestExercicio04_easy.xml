@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestExercicio04_easy" time="0" errors="0" skipped="0">
+<testsuite tests="1" failures="0" name="TestExercicio04_easy" time="0.001" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="java.vm.version" value="11.0.13+10-LTS-370"/>
@@ -45,7 +45,7 @@
     <property name="java.class.path" value="/opt/homebrew/Cellar/maven/3.8.3/libexec/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean jacoco:prepare-agent install jacoco:report"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher install"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.0.13.jdk/Contents/Home"/>
     <property name="user.language" value="pt"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -64,5 +64,5 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="TestExercicio04_easy" name="testMultiplicacaoVariavelArmazenada" time="0"/>
+  <testcase classname="TestExercicio04_easy" name="testMultiplicacaoVariavelArmazenada" time="0.001"/>
 </testsuite>
