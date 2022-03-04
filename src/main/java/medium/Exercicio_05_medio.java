@@ -1,5 +1,4 @@
 package medium;
-
 import javax.swing.JOptionPane;
 
 // 5- Faça um algoritmo para ler 5 números, verificar e exibir, quais dos 5 números digitados, é o menor.

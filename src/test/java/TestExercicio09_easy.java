@@ -1,6 +1,5 @@
 import org.junit.BeforeClass;
 import org.junit.Test;
-
 import easy.Exercicio_09_easy;
 
 public class TestExercicio09_easy {
@@ -13,6 +12,6 @@ public class TestExercicio09_easy {
 
     @Test
     public void testCalculaTaboada(){
-        
+        exercicio_09_easy.calculoTaboada(10);
     }
 }

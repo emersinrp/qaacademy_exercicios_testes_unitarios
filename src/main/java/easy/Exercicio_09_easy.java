@@ -11,7 +11,7 @@ public class Exercicio_09_easy {
         while (i <= 10){
             resultado = numeroDigitado * i;
             
-            System.out.println( numeroDigitado + "x" + i + "=" + resultado);
+            System.out.println(numeroDigitado + "x" + i + "=" + resultado);
             i++;
 
         }

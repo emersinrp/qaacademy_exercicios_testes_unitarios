@@ -1,51 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="pt"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Exercicio_10_easy.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">qaacademy_exercicios_junit</a> &gt; <a href="index.source.html" class="el_package">easy</a> &gt; <span class="el_source">Exercicio_10_easy.java</span></div><h1>Exercicio_10_easy.java</h1><pre class="source lang-java linenums">package easy;
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Exercicio_10_easy.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">qaacademy_exercicios_junit</a> &gt; <a href="index.source.html" class="el_package">easy</a> &gt; <span class="el_source">Exercicio_10_easy.java</span></div><h1>Exercicio_10_easy.java</h1><pre class="source lang-java linenums">package easy;
 
 // 10-)Faça um algoritmo para ler um valor de investimento, com uma taxa de juros de 5% a.a.
 // Ao final de 10 anos, exibir o valor investido, valor dos juros e o total com juros.
 // Considerando que a remuneração será no regime de juros simples.
 
 
-<span class="nc" id="L8">public class Exercicio_10_easy {</span>
+<span class="fc" id="L8">public class Exercicio_10_easy {</span>
     
     public double calculaJuros(double valorInvestimento){
-<span class="nc" id="L11">        int ano = 1;</span>
-<span class="nc" id="L12">        double taxaJuros = 0.05, valorJuros = 0;</span>
+<span class="fc" id="L11">        int ano = 1;</span>
+<span class="fc" id="L12">        double taxaJuros = 0.05, valorJuros = 0;</span>
         
-<span class="nc bnc" id="L14" title="All 2 branches missed.">        while (ano &lt;=10) {</span>
-<span class="nc" id="L15">            valorJuros = valorJuros + (valorInvestimento * taxaJuros);</span>
-<span class="nc" id="L16">            ano++;</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        while (ano &lt;=10) {</span>
+<span class="fc" id="L15">            valorJuros = valorJuros + (valorInvestimento * taxaJuros);</span>
+<span class="fc" id="L16">            ano++;</span>
         }
-<span class="nc" id="L18">        return valorJuros; </span>
+<span class="fc" id="L18">        return valorJuros; </span>
     }    
     public double totalComJuros(double valorJuros, double valorInvestimento){
-<span class="nc" id="L21">        double valorTotal = valorJuros + valorInvestimento;</span>
-<span class="nc" id="L22">        return valorTotal;</span>
+<span class="fc" id="L21">        double valorTotal = valorJuros + valorInvestimento;</span>
+<span class="fc" id="L22">        return valorTotal;</span>
     }
     
 }
-
-// CODIGO ANTES DA REFATORACAO:
-
-    // public static void main(String[] args) {
-        
-    //     double valorJuros = 0, taxaJuros = 0.05, valorTotal, valorInvestimento;
-    //     int ano = 1;
-
-    //     String valorInvestimentoStg = JOptionPane.showInputDialog(&quot;Digite o valor investido: &quot;);
-    //     valorInvestimento = Integer.parseInt(valorInvestimentoStg);
-    //     DecimalFormat df = new DecimalFormat(&quot;#,###.##&quot;);
-
-    //     while (ano &lt;= 10) {
-
-    //         valorJuros = valorJuros + (valorInvestimento * taxaJuros);
-    //         ano++;            
-    //     }
-
-    //     valorTotal = valorJuros + valorInvestimento;
-
-    //     System.out.println(&quot;Valor investido: R$ &quot; + df.format(valorInvestimento));
-    //     System.out.println(&quot;Valor juros: R$ &quot; + df.format(valorJuros));
-    //     System.out.println(&quot;Valor total com juros: R$ &quot; + df.format(valorTotal));
-
-    // }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.2.201808211720</span></div></body></html>

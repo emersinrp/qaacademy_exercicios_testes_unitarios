@@ -1,6 +1,6 @@
 package medium;
 
-public class Exercicio_08_medio {
+public class Exercicio_07_08_medio {
     
     public String[] criaVetorMeses() {
         
