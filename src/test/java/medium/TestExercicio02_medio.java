@@ -1,9 +1,8 @@
+package medium;
 import java.text.DecimalFormat;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import medium.Exercicio_02_medio;
 
 public class TestExercicio02_medio {
     

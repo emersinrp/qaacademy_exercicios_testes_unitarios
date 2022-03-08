@@ -1,6 +1,4 @@
 package medium;
-import javax.swing.JOptionPane;
-
 // 5- Faça um algoritmo para ler 5 números, verificar e exibir, quais dos 5 números digitados, é o menor.
 
 public class Exercicio_05_medio {
@@ -23,9 +21,19 @@ public class Exercicio_05_medio {
 
     private int lerNumeroDigitado() {
 
-        String numeroDigitadoStg = JOptionPane.showInputDialog("Digite o número :");
-        int numeroDigitado = Integer.parseInt(numeroDigitadoStg);
+        int numeroDigitado = 5;
 
         return numeroDigitado;
     }
+
+// Metodo para fazer funcionar o teste, sem Joptionpane
+
+//    private int lerNumeroDigitado() {
+
+//        String numeroDigitadoStg = JOptionPane.showInputDialog("Digite o número :");
+//        int numeroDigitado = Integer.parseInt(numeroDigitadoStg);
+
+//        return numeroDigitado;
+//    }
+
 }

@@ -1,6 +1,6 @@
+package medium;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import medium.Exercicio_01_medio;
 
 public class TestExercicio01_medio {
     
